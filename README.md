@@ -1,2 +1,0 @@
-# proyecto-PRISMA
-ADSO 3321349
