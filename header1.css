@@ -1,0 +1,122 @@
+
+header{
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    padding:30px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: elevar 2s ease forwards;
+}
+
+.logo{
+    margin-top:65px ;
+    padding-top: 0;
+    margin-bottom: 50px;
+    margin-right: 90px;
+    width: 250px;
+    height: auto; 
+
+}
+
+.navegador {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+.navegador a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.navegador li{
+    position: relative;
+    margin:20px 65px 20px 50px ;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: text-decoration 0.1s ease;
+    transition: transform 0.3s ease; 
+}
+.navegador li::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #53379E, #2575fc);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.icono img{
+    width: 60px;
+    transition: transform 0.2s ease;
+}
+
+.barra-iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    margin-left: 100px;
+    margin-top:65px ;
+    margin-bottom: 50px;
+}
+
+.navegador li:hover,.icono img:hover {
+    transform: scale(1.3); 
+}
+.navegador li:hover::after{
+    width: 100%;
+}
+
+@keyframes elevar {
+    to {
+        opacity: 1;
+        transform: translateY(-8px);
+    }
+}
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .logo {
+        width: 200px;
+        height: auto;
+        margin: 0;
+    }
+
+    .navegador {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navegador li {
+        margin: 10px 0;
+    }
+
+    .barra-iconos {
+        margin: 0;
+    }
+
+}
