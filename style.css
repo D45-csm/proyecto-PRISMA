@@ -9,10 +9,10 @@
     width: 20px;
     height: 20px;
     z-index: 9999;
-    border: 2px solid rgb(139, 249, 213);
+    border: 2px solid rgb(110, 96, 58);
     border-radius: 50%;
     transition: 100ms;
-    background-color: rgb(194, 245, 254);
+    background-color: rgb(219, 190, 132);
 }
 
 
@@ -177,6 +177,7 @@ p{
 .ropa p{
     font-size: 20px;
 }
+
 
 
 
