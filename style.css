@@ -14,6 +14,18 @@ flex-direction: column;
 
 }
 /*-----------------*/
+.puntero{
+    position: fixed;
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    z-index: 9999;
+    border: 2px solid rgb(110, 96, 58);
+    border-radius: 50%;
+    transition: 100ms;
+    background-color: rgb(219, 190, 132);
+}
+
 /*primera seccion*/
 
 main{
@@ -140,4 +152,5 @@ margin-top: 2rem;
 .productos:hover{
     transform: scale(0.96);
 }
+
 
