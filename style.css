@@ -44,6 +44,16 @@ header.scrolled a{
     background-position: center;
 }
 
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background: #B08e6b;
+  z-index: 1000;
+}
+
 header{
     background-color: transparent;
     position: fixed;
@@ -177,6 +187,8 @@ p{
 .ropa p{
     font-size: 20px;
 }
+
+
 
 
 
