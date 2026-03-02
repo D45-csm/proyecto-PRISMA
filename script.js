@@ -1,3 +1,14 @@
+/* barra progreso */
+
+const barraArriba = document.getElementById("progress-bar")
+
+function barraProgreso(){
+    const alturaPantalla = window.scrollY;
+    const restaAltura = document.documentElement.scrollHeight - window.innerHeight;
+    const  porcentaje = ( alturaPantalla / restaAltura) *100;
+    barraArriba.style.width = porcentaje + "%"
+}
+
 window.addEventListener("scroll", function() {
     const header = document.getElementById('header');
     header.classList.toggle("scrolled", window.scrollY);
@@ -24,6 +35,7 @@ mouseY = e.clientY;
 puntero.style.left = mouseX + 'px';
 puntero.style.top = mouseY + 'px';
 })
+
 
 
 
