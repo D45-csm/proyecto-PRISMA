@@ -4,11 +4,15 @@
     font-family: "Italiana", sans-serif;
 }
 .puntero{
-
+    position: fixed;
+    pointer-events: none;
     width: 20px;
     height: 20px;
+    z-index: 9999;
+    border: 2px solid rgb(139, 249, 213);
     border-radius: 50%;
-    background-color: blue;
+    transition: 100ms;
+    background-color: rgb(194, 245, 254);
 }
 
 
@@ -173,6 +177,7 @@ p{
 .ropa p{
     font-size: 20px;
 }
+
 
 
 
