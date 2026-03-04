@@ -10,9 +10,18 @@ width: auto;
 display: flex;
 justify-content: center;
 flex-direction: column;
-
-
 }
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background: #B08e6b;
+  z-index: 1000;
+}
+
 /*-----------------*/
 .puntero{
     position: fixed;
@@ -152,5 +161,6 @@ margin-top: 2rem;
 .productos:hover{
     transform: scale(0.96);
 }
+
 
 
