@@ -1,4 +1,6 @@
 /* puntero*/
+
+/*revisado por el instructor Yonatan*/
 const puntero= document.getElementById("punto");
 
 window.addEventListener("mousemove",e=>{
