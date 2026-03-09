@@ -89,6 +89,12 @@ height: auto;
     color: #FDB105;
 }
 
+@keyframes rise {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /*---------------------------------*/
 /*estilo de productos destacados*/
