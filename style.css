@@ -90,15 +90,6 @@ height: auto;
 }
 
 
-@keyframes rise {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
 /*---------------------------------*/
 /*estilo de productos destacados*/
 
@@ -161,6 +152,7 @@ margin-top: 2rem;
 .productos:hover{
     transform: scale(0.96);
 }
+
 
 
 
